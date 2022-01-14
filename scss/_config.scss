@@ -1,0 +1,24 @@
+$prim-color:#28a745;
+$dark-color: #24292F;
+$light-color: #f4f4f4;
+$danger-color: #dc3545;
+$success-color: #17a2b8;
+$my-color: #073b4c;
+$my2-color: #6ec1e4;
+$max-width: 1100px;
+// margin and padding
+$spaceAmount:(1, 2, 3, 4, 5);
+@each $space in $spaceAmount {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}

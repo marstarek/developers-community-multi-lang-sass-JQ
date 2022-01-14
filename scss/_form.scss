@@ -1,0 +1,50 @@
+@import 'config';
+.register,
+.login {
+    display: flex;
+    justify-content: space-between;
+    .form-half {
+        width: 50%;
+        .form {
+            &-group {
+                margin: 1.2rem 0;
+            }
+            &-icon {
+                color: $prim-color
+            }
+            &-head {
+                color: $prim-color
+            }
+            &-text {
+                display: block;
+                color: $my-color;
+                margin-top: .3rem;
+            }
+            input[type='text'],
+            input[type='email'],
+            input[type='password'],
+            input[type='data'],
+            select,
+            textarea {
+                display: block;
+                width: 88%;
+                padding: 0.4rem;
+                font-size: 1.2rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .signin-a {
+                color: $prim-color;
+            }
+        }
+    }
+    .img-half {
+        width: 50%;
+        // .login-img {
+        //     margin: 3rem 0rem;
+        // }
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+@import 'config';
+@import 'mixin';
+.container {
+    max-width: $max-width;
+    margin: auto;
+    overflow: hidden;
+    // padding: 0 2rem;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+
+.x-large {
+    color: $prim-color;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-prim {
+    color: $prim-color;
+}
+
+.round-img {
+    border-radius: 50%
+}
+
+.line {
+    height: 1px;
+    background: #ccc;
+    margin: 1.5rem
+}
+
+// Backgrounds
+.bg {
+    &-prim {
+        @include set-background($prim-color);
+    }
+    &-light {
+        @include set-background($light-color);
+        border: #ccc 1px solid;
+    }
+    &-dark {
+        @include set-background($dark-color);
+    }
+    &-success {
+        @include set-background($success-color);
+    }
+    &-danger {
+        @include set-background($danger-color);
+    }
+    &-white {
+        @include set-background(#fff);
+        border: #ccc 1px solid;
+    }
+}
+
+// buttons
+.btn {
+    display: inline-block;
+    background: $light-color;
+    color: #333;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0;
+    outline: none;
+    transition: all 0.2s ease-in;
+    border-radius: 5px;
+    &.btn-prim {
+        @include set-background($prim-color);
+        &:hover {
+            background: lighten($prim-color, 5%);
+        }
+    }
+    &.btn-dark {
+        @include set-background($dark-color);
+        &:hover {
+            background: lighten($dark-color, 5%);
+        }
+    }
+    &.btn-success {
+        @include set-background($success-color);
+        &:hover {
+            background: lighten($success-color, 5%);
+        }
+    }
+    &.btn-danger {
+        @include set-background($danger-color);
+        &:hover {
+            background: lighten($danger-color, 5%);
+        }
+    }
+    &:hover {
+        background: lighten($dark-color, 20%);
+        color: #fff;
+    }
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    text-align: center;
+    margin: 0.3rem;
+    background: $light-color;
+    color: #333;
+    border-radius: 5px;
+    &.badge-prim {
+        @include set-background($prim-color);
+    }
+    &.badge-dark {
+        @include set-background($dark-color);
+    }
+    &.badge-success {
+        @include set-background($success-color);
+    }
+    &.badge-danger {
+        @include set-background($danger-color);
+    }
+}
