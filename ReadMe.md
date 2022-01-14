@@ -7,6 +7,5 @@
         }
     ],
     "liveSassCompile.settings.generateMap": false,
-    
 # start at home  html 
  Your site is ready to be published at https://marstarek.github.io/developers-community-sass-website/
