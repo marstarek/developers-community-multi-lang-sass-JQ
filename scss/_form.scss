@@ -1,6 +1,7 @@
 @import 'config';
 .register,
-.login {
+.login,
+.edit-profile {
     display: flex;
     justify-content: space-between;
     .form-half {
@@ -33,6 +34,31 @@
                 border: 1px solid #ccc;
                 border-radius: 5px;
             }
+            input[type='submit'] {
+                font: inherit;
+            }
+            .social-input {
+                display: flex;
+                i {
+                    padding: 0.5rem;
+                    width: 4rem;
+                    &.fa-twitter {
+                        color: rgb(67, 95, 255);
+                    }
+                    &.fa-facebook {
+                        color: rgb(29, 51, 175);
+                    }
+                    &.fa-youtube {
+                        color: rgb(196, 20, 20);
+                    }
+                    &.fa-linkedin {
+                        color: rgb(16, 25, 75);
+                    }
+                    &.fa-instagram {
+                        color: rgb(255, 67, 199);
+                    }
+                }
+            }
             .signin-a {
                 color: $prim-color;
             }
@@ -40,9 +66,70 @@
     }
     .img-half {
         width: 50%;
-        // .login-img {
-        //     margin: 3rem 0rem;
-        // }
+        .social-half {
+            margin-top: -0.7rem;
+            .social-head {
+                display: flex;
+                justify-content: center;
+            }
+            .form {
+                &-group {
+                    margin: 1.2rem 0;
+                }
+                &-icon {
+                    color: $prim-color
+                }
+                &-head {
+                    color: $prim-color
+                }
+                &-text {
+                    display: block;
+                    color: $my-color;
+                    margin-top: .3rem;
+                }
+                input[type='text'],
+                input[type='email'],
+                input[type='password'],
+                input[type='data'],
+                select,
+                textarea {
+                    display: block;
+                    width: 88%;
+                    padding: 0.4rem;
+                    font-size: 1.2rem;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+                input[type='submit'] {
+                    font: inherit;
+                }
+                .social-input {
+                    display: flex;
+                    i {
+                        padding: 0.1rem;
+                        width: 4rem;
+                        &.fa-twitter {
+                            color: rgb(67, 95, 255);
+                        }
+                        &.fa-facebook {
+                            color: rgb(29, 51, 175);
+                        }
+                        &.fa-youtube {
+                            color: rgb(196, 20, 20);
+                        }
+                        &.fa-linkedin {
+                            color: rgb(16, 25, 75);
+                        }
+                        &.fa-instagram {
+                            color: rgb(255, 67, 199);
+                        }
+                    }
+                }
+                .signin-a {
+                    color: $prim-color;
+                }
+            }
+        }
         img {
             width: 100%;
         }

@@ -391,6 +391,16 @@
   color: #fff;
 }
 
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.table th {
+  background: #f4f4f4;
+}
+
 .m-1 {
   margin: 1rem;
 }
@@ -472,7 +482,8 @@
 }
 
 .register,
-.login {
+.login,
+.edit-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,27 +493,32 @@
 }
 
 .register .form-half,
-.login .form-half {
+.login .form-half,
+.edit-profile .form-half {
   width: 50%;
 }
 
 .register .form-half .form-group,
-.login .form-half .form-group {
+.login .form-half .form-group,
+.edit-profile .form-half .form-group {
   margin: 1.2rem 0;
 }
 
 .register .form-half .form-icon,
-.login .form-half .form-icon {
+.login .form-half .form-icon,
+.edit-profile .form-half .form-icon {
   color: #28a745;
 }
 
 .register .form-half .form-head,
-.login .form-half .form-head {
+.login .form-half .form-head,
+.edit-profile .form-half .form-head {
   color: #28a745;
 }
 
 .register .form-half .form-text,
-.login .form-half .form-text {
+.login .form-half .form-text,
+.edit-profile .form-half .form-text {
   display: block;
   color: #073b4c;
   margin-top: .3rem;
@@ -519,7 +535,13 @@
 .login .form-half .form input[type='password'],
 .login .form-half .form input[type='data'],
 .login .form-half .form select,
-.login .form-half .form textarea {
+.login .form-half .form textarea,
+.edit-profile .form-half .form input[type='text'],
+.edit-profile .form-half .form input[type='email'],
+.edit-profile .form-half .form input[type='password'],
+.edit-profile .form-half .form input[type='data'],
+.edit-profile .form-half .form select,
+.edit-profile .form-half .form textarea {
   display: block;
   width: 88%;
   padding: 0.4rem;
@@ -528,18 +550,198 @@
   border-radius: 5px;
 }
 
+.register .form-half .form input[type='submit'],
+.login .form-half .form input[type='submit'],
+.edit-profile .form-half .form input[type='submit'] {
+  font: inherit;
+}
+
+.register .form-half .form .social-input,
+.login .form-half .form .social-input,
+.edit-profile .form-half .form .social-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.register .form-half .form .social-input i,
+.login .form-half .form .social-input i,
+.edit-profile .form-half .form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.register .form-half .form .social-input i.fa-twitter,
+.login .form-half .form .social-input i.fa-twitter,
+.edit-profile .form-half .form .social-input i.fa-twitter {
+  color: #435fff;
+}
+
+.register .form-half .form .social-input i.fa-facebook,
+.login .form-half .form .social-input i.fa-facebook,
+.edit-profile .form-half .form .social-input i.fa-facebook {
+  color: #1d33af;
+}
+
+.register .form-half .form .social-input i.fa-youtube,
+.login .form-half .form .social-input i.fa-youtube,
+.edit-profile .form-half .form .social-input i.fa-youtube {
+  color: #c41414;
+}
+
+.register .form-half .form .social-input i.fa-linkedin,
+.login .form-half .form .social-input i.fa-linkedin,
+.edit-profile .form-half .form .social-input i.fa-linkedin {
+  color: #10194b;
+}
+
+.register .form-half .form .social-input i.fa-instagram,
+.login .form-half .form .social-input i.fa-instagram,
+.edit-profile .form-half .form .social-input i.fa-instagram {
+  color: #ff43c7;
+}
+
 .register .form-half .form .signin-a,
-.login .form-half .form .signin-a {
+.login .form-half .form .signin-a,
+.edit-profile .form-half .form .signin-a {
   color: #28a745;
 }
 
 .register .img-half,
-.login .img-half {
+.login .img-half,
+.edit-profile .img-half {
   width: 50%;
 }
 
+.register .img-half .social-half,
+.login .img-half .social-half,
+.edit-profile .img-half .social-half {
+  margin-top: -0.7rem;
+}
+
+.register .img-half .social-half .social-head,
+.login .img-half .social-half .social-head,
+.edit-profile .img-half .social-half .social-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.register .img-half .social-half .form-group,
+.login .img-half .social-half .form-group,
+.edit-profile .img-half .social-half .form-group {
+  margin: 1.2rem 0;
+}
+
+.register .img-half .social-half .form-icon,
+.login .img-half .social-half .form-icon,
+.edit-profile .img-half .social-half .form-icon {
+  color: #28a745;
+}
+
+.register .img-half .social-half .form-head,
+.login .img-half .social-half .form-head,
+.edit-profile .img-half .social-half .form-head {
+  color: #28a745;
+}
+
+.register .img-half .social-half .form-text,
+.login .img-half .social-half .form-text,
+.edit-profile .img-half .social-half .form-text {
+  display: block;
+  color: #073b4c;
+  margin-top: .3rem;
+}
+
+.register .img-half .social-half .form input[type='text'],
+.register .img-half .social-half .form input[type='email'],
+.register .img-half .social-half .form input[type='password'],
+.register .img-half .social-half .form input[type='data'],
+.register .img-half .social-half .form select,
+.register .img-half .social-half .form textarea,
+.login .img-half .social-half .form input[type='text'],
+.login .img-half .social-half .form input[type='email'],
+.login .img-half .social-half .form input[type='password'],
+.login .img-half .social-half .form input[type='data'],
+.login .img-half .social-half .form select,
+.login .img-half .social-half .form textarea,
+.edit-profile .img-half .social-half .form input[type='text'],
+.edit-profile .img-half .social-half .form input[type='email'],
+.edit-profile .img-half .social-half .form input[type='password'],
+.edit-profile .img-half .social-half .form input[type='data'],
+.edit-profile .img-half .social-half .form select,
+.edit-profile .img-half .social-half .form textarea {
+  display: block;
+  width: 88%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register .img-half .social-half .form input[type='submit'],
+.login .img-half .social-half .form input[type='submit'],
+.edit-profile .img-half .social-half .form input[type='submit'] {
+  font: inherit;
+}
+
+.register .img-half .social-half .form .social-input,
+.login .img-half .social-half .form .social-input,
+.edit-profile .img-half .social-half .form .social-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.register .img-half .social-half .form .social-input i,
+.login .img-half .social-half .form .social-input i,
+.edit-profile .img-half .social-half .form .social-input i {
+  padding: 0.1rem;
+  width: 4rem;
+}
+
+.register .img-half .social-half .form .social-input i.fa-twitter,
+.login .img-half .social-half .form .social-input i.fa-twitter,
+.edit-profile .img-half .social-half .form .social-input i.fa-twitter {
+  color: #435fff;
+}
+
+.register .img-half .social-half .form .social-input i.fa-facebook,
+.login .img-half .social-half .form .social-input i.fa-facebook,
+.edit-profile .img-half .social-half .form .social-input i.fa-facebook {
+  color: #1d33af;
+}
+
+.register .img-half .social-half .form .social-input i.fa-youtube,
+.login .img-half .social-half .form .social-input i.fa-youtube,
+.edit-profile .img-half .social-half .form .social-input i.fa-youtube {
+  color: #c41414;
+}
+
+.register .img-half .social-half .form .social-input i.fa-linkedin,
+.login .img-half .social-half .form .social-input i.fa-linkedin,
+.edit-profile .img-half .social-half .form .social-input i.fa-linkedin {
+  color: #10194b;
+}
+
+.register .img-half .social-half .form .social-input i.fa-instagram,
+.login .img-half .social-half .form .social-input i.fa-instagram,
+.edit-profile .img-half .social-half .form .social-input i.fa-instagram {
+  color: #ff43c7;
+}
+
+.register .img-half .social-half .form .signin-a,
+.login .img-half .social-half .form .signin-a,
+.edit-profile .img-half .social-half .form .signin-a {
+  color: #28a745;
+}
+
 .register .img-half img,
-.login .img-half img {
+.login .img-half img,
+.edit-profile .img-half img {
   width: 100%;
 }
 
@@ -556,6 +758,32 @@ body {
   line-height: 1.6;
   background-color: #fff;
   color: #333;
+}
+
+body div > img {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 a {
@@ -792,4 +1020,156 @@ ul {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.dash {
+  margin-top: 4rem;
+}
+
+.dash .dash-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dash .dash-contain .dash-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dash .dash-contain .dash-buttons .dashbtn {
+  padding: 0.6rem .8rem;
+}
+
+.post-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.post > div:first-child {
+  text-align: center;
+}
+
+.post img {
+  width: 150px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .hide-sm {
+    display: none;
+  }
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  ul {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0rem;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+  input {
+    margin: 0 auto;
+  }
+  .register,
+  .login {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .register .form-half,
+  .login .form-half {
+    text-align: center;
+    width: 100%;
+  }
+  .register .img-half,
+  .login .img-half {
+    width: 100%;
+  }
+  .dash {
+    margin-top: 8rem;
+    text-align: center;
+  }
+  .dash .dash-contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dash .dash-contain .dash-buttons {
+    padding: 1rem;
+  }
+  .dash .dash-contain .dash-buttons .dashbtn {
+    margin: 0rem .375rem;
+  }
+  .table {
+    margin: 0 auto;
+  }
+  .table th,
+  .table td {
+    text-align: center;
+  }
+  .x-large {
+    font-size: 3rem;
+  }
+  .profiles-contain {
+    text-align: center;
+  }
+  .profiles-contain .profile {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .profiles-contain .profile ul {
+    display: none;
+  }
+  .profiles-contain .profile img {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .profile-contain {
+    margin: 8rem 1rem;
+  }
+  .profile-grid {
+        grid-template-areas: "top " " about" "exp " "edu " " github";
+  }
+  .post-contain {
+    text-align: center;
+    margin: 8rem 1rem;
+  }
+  .post-contain .post {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }

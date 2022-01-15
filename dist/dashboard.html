@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/231bdf8c0f.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>dev connector</title>
 </head>
@@ -21,11 +21,101 @@
         </h1>
         <ul>
             <li><a href="profiles.html">Developers</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="fas fa-user"></i>
+                    <span class="hide-sm"> Dashboard</span></a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="hide-sm"> Logout</span></a>
+            </li>
         </ul>
     </nav>
-    <section class="container"></section>
+
+    <section class="container dash">
+        <div class="dash-contain">
+            <div>
+                <h1 class="x-large text-prim">Dashboard</h1>
+                <p class="lead">Welcome Tarek</p>
+                <div class="dash-buttons">
+                    <a href="create-profile.html" class="btn dashbtn">
+                        <i class="fas fa-user-circle text-prim"></i> Edit Profile
+                    </a>
+                    <a href="add-experience.html" class="btn dashbtn">
+                        <i class="fab fa-black-tie text-prim"></i> Add Experience
+                    </a>
+                    <a href="add-education.html" class="btn dashbtn">
+                        <i class="fas fa-graduation-cap text-prim"></i> Add Education
+                    </a>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="../dist/img/google-analytics-dashboard-business-analytics-computer-icons-png-favpng-gDf2BB4Vjzxbm1svAwANMVmc5-removebg-preview.png" alt="" />
+            </div>
+        </div>
+
+        <h2 class="">Experience Credentials</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th class="hide-sm">Title</th>
+                    <th class="hide-sm">Years</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Microsoft</td>
+                    <td class="hide-sm">Senior Developer</td>
+                    <td class="hide-sm">Oct 2011 - Current</td>
+                    <td>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sun Microsystems</td>
+                    <td class="hide-sm">Senior Developer</td>
+                    <td class="hide-sm">Oct 2004 - Nov 2010</td>
+                    <td>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="my-2">Education Credentials</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th class="hide-sm">Degree</th>
+                    <th class="hide-sm">Years</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alexandria University</td>
+                    <td class="hide-sm">Masters</td>
+                    <td class="hide-sm">Sep 1993 - June 1999</td>
+                    <td>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="my-2">
+            <button class="btn btn-danger">
+          <i class="fas fa-user-minus"></i> Delete My Account
+        </button>
+        </div>
+    </section>
 </body>
 
 </html>
