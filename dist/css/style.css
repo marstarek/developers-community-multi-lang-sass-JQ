@@ -864,7 +864,7 @@ img {
     padding: 0;
     text-align: right;
     z-index: 1;
-    border-radius: 0.3125rem 0rem 0.3125rem 0.3125rem;
+    border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
 }
 
 .navbar ul .dropdown .dropdown-content ul {
@@ -1195,6 +1195,11 @@ ul {
     .login .img-half,
     .edit-profile .img-half {
         width: 100%;
+    }
+    .register .img-half .social-half,
+    .login .img-half .social-half,
+    .edit-profile .img-half .social-half {
+        display: none;
     }
     .dash {
         margin-top: 8rem;
