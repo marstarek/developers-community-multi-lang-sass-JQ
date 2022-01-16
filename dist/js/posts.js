@@ -41,25 +41,25 @@ posts.map((post) => {
     let postsDev = document.querySelector(".posts");
     console.log(postsDev);
 
-    let child = `  <div class="post bg-white my-1 p-1">
+    let child = `  <div  class="lang       post bg-white my-1 p-1">
     <div>
         <a href="profile.html">
-            <img class="round-img" src=${post.img} alt="" />
+            <img  class="lang       round-img" src=${post.img} alt="" />
             <h4>${post.name}</h4>
         </a>
     </div>
 
     <div>
-        <p class="my-1">
+        <p  class="lang       my-1">
         ${post.desc}
         </p>
-        <button class="btn">
-<i class="fas fa-thumbs-up"></i> <span>       ${post.likes}</span>
+        <button  class="lang       btn">
+<i  class="lang       fas fa-thumbs-up"></i> <span>       ${post.likes}</span>
 </button>
-        <button class="btn">
-<i class="fas fa-thumbs-down"><span>    </i>   ${post.dislikes}</span> 
+        <button  class="lang       btn">
+<i  class="lang       fas fa-thumbs-down"><span>    </i>   ${post.dislikes}</span> 
 </button>
-        <a href="post.html" class="btn btn-prim"> Discussion </a>
+        <a href="post.html"  class="lang       btn btn-prim"> Discussion </a>
     </div>
 </div>`;
     postsDev.insertAdjacentHTML("beforeend", child);

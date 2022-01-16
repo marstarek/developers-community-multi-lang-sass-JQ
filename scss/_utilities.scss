@@ -130,8 +130,10 @@
     td {
         padding: 1rem;
         text-align: left;
+        color: $prim-color;
     }
     th {
-        background: $light-color;
+        // background: $light-color;
+        color: $prim-color;
     }
 }

@@ -18,14 +18,22 @@
         margin: 0 auto;
     }
     .register,
-    .login {
+    .login,
+    .edit-profile {
         flex-direction: column;
         .form-half {
             text-align: center;
             width: 100%;
+            select,
+            textarea {
+                margin: 0 auto;
+            }
         }
         .img-half {
             width: 100%;
+            .social-half {
+                display: none;
+            }
         }
     }
     .dash {

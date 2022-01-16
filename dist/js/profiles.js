@@ -37,20 +37,20 @@ let profiles = [{
 
 profiles.map((p) => {
     let profilesDev = document.querySelector(".profiles");
-    let child = `<div class="profile bg-light">
-    <img src=${p.img} class="round-img" alt="" />
+    let child = `<div  class="lang       profile bg-light">
+    <img src=${p.img}  class="lang       round-img" alt="" />
     <div>
-        <h2 class="name">${p.name}</h2>
-        <p class="job">${p.job}</p>
-        <p class="country">${p.country}</p>
-        <a href="profile.html" class="btn btn-prim"> View Profile </a>
+        <h2  class="lang       name">${p.name}</h2>
+        <p  class="lang       job">${p.job}</p>
+        <p  class="lang       country">${p.country}</p>
+        <a href="profile.html"  class="lang       btn btn-prim"> View Profile </a>
     </div>
-    <ul class="profile-list">
-        <li class="text-prim"><i class="fas fa-check"></i>${p.skills[0]}</li>
-        <li class="text-prim"><i class="fas fa-check"></i>${p.skills[1]}</li>
-        <li class="text-prim"><i class="fas fa-check"></i>${p.skills[2]}</li>
-        <li class="text-prim"><i class="fas fa-check"></i>${p.skills[3]}</li>
-        <li class="text-prim"><i class="fas fa-check"></i>${p.skills[4]}</li>
+    <ul  class="lang       profile-list">
+        <li  class="lang       text-prim"><i  class="lang       fas fa-check"></i>${p.skills[0]}</li>
+        <li  class="lang       text-prim"><i  class="lang       fas fa-check"></i>${p.skills[1]}</li>
+        <li  class="lang       text-prim"><i  class="lang       fas fa-check"></i>${p.skills[2]}</li>
+        <li  class="lang       text-prim"><i  class="lang       fas fa-check"></i>${p.skills[3]}</li>
+        <li  class="lang       text-prim"><i  class="lang       fas fa-check"></i>${p.skills[4]}</li>
     </ul>
 </div>`;
     profilesDev.insertAdjacentHTML("beforeend", child);

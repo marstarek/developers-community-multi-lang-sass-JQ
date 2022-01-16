@@ -13,6 +13,7 @@ body {
     line-height: 1.6;
     background-color: #fff;
     color: #333;
+    transition: 1s;
     div>img {
         animation: fadeIn 3s;
         -webkit-animation: fadeIn 3s;
@@ -77,6 +78,55 @@ img {
         margin: 0 0.25rem;
         &:hover {
             color: $prim-color;
+        }
+    }
+    ul {
+        display: flex;
+        margin: auto 0;
+        align-items: center;
+        .translate {
+            padding: 0.4rem 0.8rem;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            padding: 0 .6875rem;
+            i {
+                font-size: 1.5rem;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                right: -0.75rem;
+                background-color: #f9f9f9;
+                -webkit-box-shadow: 0rem .5rem 1rem 0rem rgb(0 0 0 / 20%);
+                box-shadow: 0rem .5rem 1rem 0rem rgb(0 0 0 / 20%);
+                padding: 0;
+                text-align: right;
+                z-index: 1;
+                border-radius: .3125rem .3125rem .3125rem .3125rem;
+                ul {
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    li {
+                        margin: .125rem;
+                        button {
+                            margin: .3125rem .3125rem;
+                            box-shadow: 0rem .5rem 1rem 0rem rgb(0 0 0 / 20%);
+                        }
+                        input {
+                            margin: .3125rem .3125rem;
+                            padding: 6.4px 12.8px;
+                            box-shadow: 0rem .5rem 1rem 0rem rgb(0 0 0 / 20%);
+                        }
+                    }
+                }
+            }
+            &:hover .dropdown-content {
+                display: block;
+            }
         }
     }
 }
